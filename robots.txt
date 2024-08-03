@@ -2,18 +2,18 @@ User-agent: *
 Disallow:
 
 
-Disallow: /admin/       # Bloquear área administrativa
-Disallow: /private/     # Bloquear conteúdo privado
-Disallow: /cgi-bin/     # Bloquear scripts CGI
-Disallow: /tmp/         # Bloquear diretório temporário
-Disallow: /checkout/    # Bloquear páginas de checkout (se aplicável)
+Disallow: /admin/       
+Disallow: /private/     
+Disallow: /cgi-bin/    
+Disallow: /tmp/         
+Disallow: /checkout/    
 
 
-Allow: /css/            # Permitir acesso a arquivos CSS
-Allow: /js/             # Permitir acesso a arquivos JavaScript
-Allow: /images/         # Permitir acesso a imagens
+Allow: /css/           
+Allow: /js/             
+Allow: /images/        
 
 
-Disallow: /*?*          # Bloquear URLs com parâmetros (para evitar duplicação)
+Disallow: /*?*          
 
 Sitemap: https://www.cineflick.com/sitemap.xml
