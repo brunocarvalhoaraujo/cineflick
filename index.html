@@ -73,7 +73,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -2029,7 +2029,7 @@
                     <div class="elementor-widget-container">
                         <div class="elementor-button-wrapper">
                             <a class="elementor-button elementor-button-link elementor-size-lg elementor-animation-float"
-                                href="https://wa.me/5563992279279?text=Quero%20saber%20mais%20sobre%20o%20produto...">
+                                href="https://wa.me/5563981044274?text=Quero%20saber%20mais%20sobre%20o%20produto...">
                                 <span class="elementor-button-content-wrapper">
                                     <span class="elementor-button-text">Falar com o suporte!</span>
                                 </span>
@@ -2160,6 +2160,81 @@
         id="elementor-frontend-js" defer data-deferred="1"></script>
     <script data-optimized="1" src="wp-content/litespeed/js/03b4ead7f202a24b2c7f7371d2393cb4bfef.js?ver=271ae"
         id="pro-elements-handlers-js" defer data-deferred="1"></script>
+
+    <style>
+        .CookieMessage {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #2d2c2c;
+            z-index: 9;
+            display: none;
+        }
+
+        .CookieMessage-content {
+            color: white;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 20px 0 20px;
+            font-family: sans-serif;
+            line-height: 1.5;
+            font-size: 12px;
+
+        }
+
+        .CookieMessage-content a {
+            color: white;
+        }
+
+        .CookieMessage-content p {
+            margin: 0 0 20px 0;
+        }
+
+        .CookieMessage-button {
+            background-color: #1dc803;
+            display: inline-block;
+            text-decoration: none;
+            padding: 5px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .CookieMessage-button:hover {
+            background: #555;
+        }
+    </style>
+    <!-- cookies notification (accept button) -->
+    <div id="cookie-notification" class="CookieMessage" style="display: none;">
+        <div class="CookieMessage-content" style="display: flex; justify-content: center; flex-direction: column;">
+            <center>
+                <p style="text-align: left;">Ao utilizar o site <strong>CINEFLICK</strong> você concorda com o uso de
+                    cookies de navegação e com os Termos de Uso
+                    do site. <a href="#">Saiba mais</a></p>
+            </center>
+            <p style="display: flex; justify-content: center;"><a id="cookie-notification-close"
+                    class="CookieMessage-button" href="#" style="font-weight: bold;">Aceitar</a></p>
+        </div>
+    </div>
+
+    <script>
+        if (!localStorage.getItem("cookiesAccepted")) {
+            var cookieMessage = document.getElementById('cookie-notification');
+            var closeCookie = document.getElementById('cookie-notification-close');
+
+            cookieMessage.style.display = 'block';
+            closeCookie.addEventListener("click", function (e) {
+                e.preventDefault();
+                localStorage.setItem("cookiesAccepted", true);
+
+                cookieMessage.style.display = 'none';
+            });
+        }
+    </script>
+
+
+
+
 </body>
 <!-- Mirrored from cineflickcard.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Aug 2024 23:15:19 GMT -->
 
