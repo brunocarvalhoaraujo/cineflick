@@ -2289,7 +2289,6 @@
             transform: scale(1.1);
             background-color: #fe0606;
         }
-
     </style>
 
 
@@ -2314,8 +2313,13 @@
             }
         };
 
-        document.getElementById('likeButton').addEventListener('click', ()=>{
-            window.location.href='#oferta';
+        document.getElementById('likeButton').addEventListener('click', () => {
+            window.location.href = '#oferta';
+        });
+
+        // Função para ocultar o botão ao clicar
+        document.getElementById('likeButton').addEventListener('click', function () {
+            this.style.display = 'none';
         });
 
     </script>
