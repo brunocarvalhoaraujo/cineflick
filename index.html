@@ -2265,60 +2265,6 @@
 
 
 
-    <style>
-        /* Estilo do botão flutuante */
-        .floating-like-button {
-            position: fixed;
-            bottom: 20px;
-            right: 12px;
-            background-color: #2d1111;
-            color: white;
-            border: none;
-            border-radius: 100%;
-            padding: 10px;
-            font-size: 18px;
-            cursor: pointer;
-            box-shadow: 0px 4px 6px rgb(13, 13, 13);
-            transition: transform 0.2s ease-in-out;
-            display: none;
-            z-index: 999999;
-            /* Botão invisível por padrão */
-        }
-
-    </style>
-
-
-
-    <!-- Botão de Gostei Flutuante -->
-    <button class="floating-like-button" id="likeButton" title="Adorei !">
-        ❤️
-    </button>
-
-    <script>
-        window.onscroll = function () {
-            var likeButton = document.getElementById('likeButton');
-            var scrollPosition = window.scrollY || window.pageYOffset;
-            var windowHeight = window.innerHeight;
-            var documentHeight = document.body.scrollHeight;
-
-            // Quando o usuário rolar até a metade da página
-            if (scrollPosition > (documentHeight - windowHeight) / 2) {
-                likeButton.style.display = 'block';
-            } else {
-                likeButton.style.display = 'none';
-            }
-        };
-
-
-        // Função para ocultar o botão ao clicar
-        document.getElementById('likeButton').addEventListener('click', function () {
-            this.style.display = 'none';
-        });
-
-    </script>
-
-
-
 
 </body>
 <!-- Mirrored from cineflickcard.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Aug 2024 23:15:19 GMT -->
